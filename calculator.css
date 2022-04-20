@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+div {
+    width: 100%;
+    display: block;
+}
+
+div#all {
+    margin: auto;
+    background-color: grey;
+    width: 230px;
+    height: 385px;
+    margin-top: 50px;
+    padding: 0px; 
+    border-radius: 20px;
+    border-color: black;
+    border: 1px solid;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+div#result {
+    position: relative;
+    background-color: rgb(200, 224, 200);
+    width: 100%;
+    height: 100px;
+    margin: 0 0 10px 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: 1px solid;
+}
+
+table {
+    border-spacing: 4px;
+    margin: auto;
+}
+
+button {
+    width: 45px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+    outline: none;
+    border-radius: 15px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-top: none;
+    border-color:rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+button:active {
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-color:rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 0px 3px black;
+}
+
+.hbutton {
+    width: 95px;
+}
+
+.vbutton {
+    height: 95px;
+}
+
+button:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+button#equal {
+    background-color: rgb(105, 56, 241);
+}
+
+button#equal:hover {
+    background-color: rgb(91, 38, 235);
+}
+
+button#erase {
+    background-color: rgb(240, 87, 87);
+}
+
+button#erase:hover {
+    background-color: rgb(230, 81, 81);
+}
+
+span#displaybottom {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-family: Calibri, sans-serif;
+    font-size: 20pt;
+}
+
+span#displaytop {
+    position: absolute;
+    bottom: 45px;
+    right: 20px;
+    font-family: Calibri, sans-serif;
+    font-size: 20pt;
+}
+

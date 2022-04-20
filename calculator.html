@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div id="all">
+        <div id="result">
+            <span id="displaytop"></span>
+            <span id="displaybottom">0</span>
+        </div>
+
+        <div id="keys">
+            <table>
+                <tr>
+                    <td><button type="button" id="erase" onclick="deleteChar()" ondblclick="deleteAll()">C</button></td>
+                    <td><button type="button" onclick="showPress('&#x00F7;')">&#x00F7;</button></td>
+                    <td><button type="button" onclick="showPress('&#x00D7;')">&#x00D7;</button></td>
+                    <td><button type="button" onclick="showPress('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="showPress('7')">7</button></td>
+                    <td><button type="button" onclick="showPress('8')">8</button></td>
+                    <td><button type="button" onclick="showPress('9')">9</button></td>
+                    <td rowspan="2"><button type="button" class="vbutton" onclick="showPress('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="showPress('4')">4</button></td>
+                    <td><button type="button" onclick="showPress('5')">5</button></td>
+                    <td><button type="button" onclick="showPress('6')">6</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="showPress('1')">1</button></td>
+                    <td><button type="button" onclick="showPress('2')">2</button></td>
+                    <td><button type="button" onclick="showPress('3')">3</button></td>
+                    <td rowspan="2"><button type="button" class="vbutton" id="equal" onclick="calculate()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" class="hbutton" onclick="showPress('0')">0</button></td>
+                    <td><button type="button" onclick="showPress('.')">&#x00B7;</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
